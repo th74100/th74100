@@ -1,3 +1,10 @@
+<!-- 打字动画标题：只改下面 lines= 里的文案即可，空格用 +，多行用 ; 分隔 -->
+<p align="center">
+  <a href="https://github.com/DenverCoder1/readme-typing-svg">
+    <img src="https://readme-typing-svg.demolab.com/?lines=Hi+%F0%9F%91%8B+I%27m+th74100;Welcome+to+my+GitHub+profile!&font=Fira+Code&center=true&vCenter=true&width=435&height=50&duration=3000&pause=1000" alt="Typing SVG" />
+  </a>
+</p>
+
 ## Hi there 👋
 
 <!--

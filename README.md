@@ -1,4 +1,4 @@
-## 👋 你好，我是 JANSON（th74100）！
+## 👋 嗨，我是 JANSON（th74100）！
 
 ![](https://raw.githubusercontent.com/th74100/th74100/main/assets/header.png)
 

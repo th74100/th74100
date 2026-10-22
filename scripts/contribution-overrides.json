@@ -5,7 +5,7 @@
     "antdv-next/vue-components"
   ],
   "project_summaries": {
-    "ant-design/ant-design": "Message 组件的指针事件与内容透明性修复。",
+    "ant-design/ant-design": "Message 组件的指针事件穿透修复。",
     "antdv-next/antdv-next": "Table、Tabs、Transfer、Locale 等组件的对齐与修复。",
     "antdv-next/vue-components": "Tabs、Mentions 与工具函数修复。"
   }

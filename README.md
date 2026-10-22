@@ -41,12 +41,12 @@
 
 <!-- CONTRIBUTIONS:START -->
 
-40 merged PRs across 3 external open-source projects. Showing up to 6 recent PRs per project.
+41 merged PRs across 3 external open-source projects. Showing up to 6 recent PRs per project.
 
 | Project | Contributions | Merged PRs |
 | --- | --- | --- |
 | **[ant-design](https://github.com/ant-design/ant-design)** | Message 组件的指针事件与内容透明性修复。 | [#59622](https://github.com/ant-design/ant-design/pull/59622) |
-| **[antdv-next](https://github.com/antdv-next/antdv-next)** | Table、Tabs、Transfer、Locale 等组件的对齐与修复。 | [#1013](https://github.com/antdv-next/antdv-next/pull/1013)&nbsp;·&nbsp;[#1008](https://github.com/antdv-next/antdv-next/pull/1008)&nbsp;·&nbsp;[#1003](https://github.com/antdv-next/antdv-next/pull/1003)<br>[#1002](https://github.com/antdv-next/antdv-next/pull/1002)&nbsp;·&nbsp;[#978](https://github.com/antdv-next/antdv-next/pull/978)&nbsp;·&nbsp;[#971](https://github.com/antdv-next/antdv-next/pull/971)<br>[View&nbsp;all&nbsp;36&nbsp;→](https://github.com/antdv-next/antdv-next/pulls?q=is%3Apr+is%3Amerged+author%3Ath74100) |
+| **[antdv-next](https://github.com/antdv-next/antdv-next)** | Table、Tabs、Transfer、Locale 等组件的对齐与修复。 | [#1045](https://github.com/antdv-next/antdv-next/pull/1045)&nbsp;·&nbsp;[#1013](https://github.com/antdv-next/antdv-next/pull/1013)&nbsp;·&nbsp;[#1008](https://github.com/antdv-next/antdv-next/pull/1008)<br>[#1003](https://github.com/antdv-next/antdv-next/pull/1003)&nbsp;·&nbsp;[#1002](https://github.com/antdv-next/antdv-next/pull/1002)&nbsp;·&nbsp;[#978](https://github.com/antdv-next/antdv-next/pull/978)<br>[View&nbsp;all&nbsp;37&nbsp;→](https://github.com/antdv-next/antdv-next/pulls?q=is%3Apr+is%3Amerged+author%3Ath74100) |
 | **[vue-components](https://github.com/antdv-next/vue-components)** | Tabs、Mentions 与工具函数修复。 | [#108](https://github.com/antdv-next/vue-components/pull/108)&nbsp;·&nbsp;[#105](https://github.com/antdv-next/vue-components/pull/105)&nbsp;·&nbsp;[#101](https://github.com/antdv-next/vue-components/pull/101) |
 
 <!-- CONTRIBUTIONS:END -->

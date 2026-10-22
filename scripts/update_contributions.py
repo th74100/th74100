@@ -119,8 +119,8 @@ def render_table(contributions, overrides):
     repositories = sorted(groups, key=lambda repo: (
         priority.get(repo, len(priority)), repo.casefold(), repo))
     lines = [
-        f"在 {len(groups)} 个外部开源项目中合并了 {len(contributions)} 个 PR，"
-        f"每个项目最多展示最近 {MAX_PRS_PER_PROJECT} 个。",
+        f"已合并 {len(contributions)} 个 PR，覆盖 {len(groups)} 个外部开源项目"
+        f"（每个项目展示最近 {MAX_PRS_PER_PROJECT} 个）。",
         "",
         "| 项目 | 贡献内容 | 已合并 PR |",
         "| --- | --- | --- |",

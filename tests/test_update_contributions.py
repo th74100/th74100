@@ -149,7 +149,7 @@ class ContributionSyncTests(unittest.TestCase):
         self.assertIn("https://github.com/featured/project)", rows[0])
         self.assertIn("https://github.com/alpha/library)", rows[1])
         self.assertIn("https://github.com/zeta/library)", rows[2])
-        self.assertIn("在 3 个外部开源项目中合并了 4 个 PR", table)
+        self.assertIn("已合并 4 个 PR，覆盖 3 个外部开源项目", table)
         self.assertNotIn("merged.svg", table)
         self.assertEqual(table, sync.render_table(list(reversed(data)), {
             "project_order": ["missing/project", "featured/project"]}))
@@ -159,7 +159,7 @@ class ContributionSyncTests(unittest.TestCase):
                 for number in range(1, 9)]
         table = sync.render_table(list(reversed(data)), {})
         self.assertEqual(re.findall(r"\[#(\d+)\]", table), ["1", "2", "3", "4", "5", "6"])
-        self.assertIn("在 1 个外部开源项目中合并了 8 个 PR", table)
+        self.assertIn("已合并 8 个 PR，覆盖 1 个外部开源项目", table)
         self.assertIn("查看全部&nbsp;8&nbsp;个", table)
         url = re.search(r"\[查看全部[^]]+\]\(([^)]+)\)", table).group(1)
         self.assertEqual(urlparse(url).path, "/upstream/library/pulls")

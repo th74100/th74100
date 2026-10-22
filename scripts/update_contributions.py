@@ -119,10 +119,10 @@ def render_table(contributions, overrides):
     repositories = sorted(groups, key=lambda repo: (
         priority.get(repo, len(priority)), repo.casefold(), repo))
     lines = [
-        f"{len(contributions)} merged PRs across {len(groups)} external open-source projects. "
-        f"Showing up to {MAX_PRS_PER_PROJECT} recent PRs per project.",
+        f"在 {len(groups)} 个外部开源项目中合并了 {len(contributions)} 个 PR，"
+        f"每个项目最多展示最近 {MAX_PRS_PER_PROJECT} 个。",
         "",
-        "| Project | Contributions | Merged PRs |",
+        "| 项目 | 贡献内容 | 已合并 PR |",
         "| --- | --- | --- |",
     ]
     for repo in repositories:
@@ -130,14 +130,14 @@ def render_table(contributions, overrides):
         label = overrides.get("project_names", {}).get(repo, repo.split("/", 1)[1])
         latest_url = f"https://github.com/{repo}/pull/{prs[0]['number']}"
         latest_title = overrides.get("descriptions", {}).get(latest_url, prs[0]["title"])
-        summary = overrides.get("project_summaries", {}).get(repo, f"Latest: {latest_title}")
+        summary = overrides.get("project_summaries", {}).get(repo, f"最新：{latest_title}")
         links = [f"[#{pr['number']}](https://github.com/{repo}/pull/{pr['number']})"
                  for pr in prs[:MAX_PRS_PER_PROJECT]]
         chunks = ["&nbsp;·&nbsp;".join(links[index:index + PRS_PER_LINE])
                   for index in range(0, len(links), PRS_PER_LINE)]
         if len(prs) > MAX_PRS_PER_PROJECT:
             query = urlencode({"q": f"is:pr is:merged author:{USERNAME}"})
-            chunks.append(f"[View&nbsp;all&nbsp;{len(prs)}&nbsp;→]"
+            chunks.append(f"[查看全部&nbsp;{len(prs)}&nbsp;个&nbsp;→]"
                           f"(https://github.com/{repo}/pulls?{query})")
         lines.append(
             f"| **[{table_text(label)}](https://github.com/{repo})** | "
@@ -166,8 +166,8 @@ def sync_profile(readme_path, overrides, api=github_api, check=False):
     changed = updated != original
     if changed and not check:
         readme_path.write_text(updated, encoding="utf-8")
-    print(f"Verified {len(contributions)} external merged PRs. "
-          f"README {'needs an update' if check and changed else 'updated' if changed else 'unchanged'}.")
+    state = "需要更新" if check and changed else "已更新" if changed else "无变化"
+    print(f"已验证 {len(contributions)} 个外部已合并 PR，README {state}。")
     return changed
 
 

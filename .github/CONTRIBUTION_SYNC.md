@@ -12,10 +12,10 @@ The table has one row per target repository. `project_order` in
 follow in alphabetical repository order. `project_summaries` and `project_names`
 provide the curated descriptions and display names. Projects without a summary
 use their latest merged PR title (or its existing `descriptions` override),
-prefixed with `Latest:`. These summaries can be updated as contributions evolve.
+prefixed with `最新：`. These summaries can be updated as contributions evolve.
 
 Each row shows up to **6 PRs**, sorted by merge date, newest first, with three
-links per line. Larger groups include a **View all N** link to that repository's
+links per line. Larger groups include a **查看全部 N 个** link to that repository's
 merged PRs authored by `th74100`. The heading totals count every verified PR
 and project, including PRs omitted from the compact display. The global link
 below the table remains available for browsing all external contributions.

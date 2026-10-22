@@ -96,10 +96,10 @@ class ContributionSyncTests(unittest.TestCase):
             path = Path(directory) / "README.md"
             original = "Intro\n" + sync.START + "\nexisting table\n" + sync.END + "\nGaming\n"
             for api in [FakeGitHub([pull()], incomplete=True), FakeGitHub([]), fail]:
-                path.write_text(original)
+                path.write_text(original, encoding="utf-8")
                 with self.assertRaises(sync.SyncError):
                     sync.sync_profile(path, {}, api)
-                self.assertEqual(path.read_text(), original)
+                self.assertEqual(path.read_text(encoding="utf-8"), original)
 
     def test_invalid_marker_boundaries_are_rejected(self):
         for source in ["no markers", sync.END + sync.START,
@@ -112,15 +112,15 @@ class ContributionSyncTests(unittest.TestCase):
             path = Path(directory) / "README.md"
             before = "# My profile\nGames, images and other content.\n" + sync.START
             after = sync.END + "\nOther links and statistics.\n"
-            path.write_text(before + "\nold table\n" + after)
+            path.write_text(before + "\nold table\n" + after, encoding="utf-8")
             self.assertTrue(sync.sync_profile(path, {}, FakeGitHub([pull()]), check=True))
-            self.assertIn("old table", path.read_text())
+            self.assertIn("old table", path.read_text(encoding="utf-8"))
             self.assertTrue(sync.sync_profile(path, {}, FakeGitHub([pull()])))
-            updated = path.read_text()
+            updated = path.read_text(encoding="utf-8")
             self.assertTrue(updated.startswith(before))
             self.assertTrue(updated.endswith(after))
             self.assertFalse(sync.sync_profile(path, {}, FakeGitHub([pull()])))
-            self.assertEqual(path.read_text(), updated)
+            self.assertEqual(path.read_text(encoding="utf-8"), updated)
 
     def test_untrusted_titles_cannot_add_table_columns_html_or_markdown_links(self):
         data = [contribution(title='<img src=x> | [click](https://example.com)\n**text**')]
@@ -149,7 +149,7 @@ class ContributionSyncTests(unittest.TestCase):
         self.assertIn("https://github.com/featured/project)", rows[0])
         self.assertIn("https://github.com/alpha/library)", rows[1])
         self.assertIn("https://github.com/zeta/library)", rows[2])
-        self.assertIn("4 merged PRs across 3 external open-source projects", table)
+        self.assertIn("在 3 个外部开源项目中合并了 4 个 PR", table)
         self.assertNotIn("merged.svg", table)
         self.assertEqual(table, sync.render_table(list(reversed(data)), {
             "project_order": ["missing/project", "featured/project"]}))
@@ -159,9 +159,9 @@ class ContributionSyncTests(unittest.TestCase):
                 for number in range(1, 9)]
         table = sync.render_table(list(reversed(data)), {})
         self.assertEqual(re.findall(r"\[#(\d+)\]", table), ["1", "2", "3", "4", "5", "6"])
-        self.assertIn("8 merged PRs across 1 external open-source projects", table)
-        self.assertIn("View&nbsp;all&nbsp;8", table)
-        url = re.search(r"\[View[^]]+\]\(([^)]+)\)", table).group(1)
+        self.assertIn("在 1 个外部开源项目中合并了 8 个 PR", table)
+        self.assertIn("查看全部&nbsp;8&nbsp;个", table)
+        url = re.search(r"\[查看全部[^]]+\]\(([^)]+)\)", table).group(1)
         self.assertEqual(urlparse(url).path, "/upstream/library/pulls")
         self.assertEqual(parse_qs(urlparse(url).query), {
             "q": ["is:pr is:merged author:th74100"]})
@@ -171,7 +171,7 @@ class ContributionSyncTests(unittest.TestCase):
             with self.subTest(count=count):
                 table = sync.render_table([contribution(i) for i in range(1, count + 1)], {})
                 self.assertEqual(len(re.findall(r"\[#\d+\]", table)), min(count, 6))
-                self.assertEqual("View&nbsp;all" in table, count > 6)
+                self.assertEqual("查看全部" in table, count > 6)
 
     def test_pr_links_wrap_in_groups_of_three(self):
         for count in [1, 3, 4, 6]:
@@ -199,20 +199,20 @@ class ContributionSyncTests(unittest.TestCase):
         data = [contribution(99, merged_at="2026-09-01T00:00:00Z", title="Older work"),
                 contribution(1, title="Recent work")]
         table = sync.render_table(data, {})
-        self.assertIn("Latest: Recent work", table)
+        self.assertIn("最新：Recent work", table)
         self.assertNotIn("Older work", table)
 
     def test_new_merged_pr_updates_existing_group_without_adding_rows(self):
         with TemporaryDirectory() as directory:
             path = Path(directory) / "README.md"
-            path.write_text(sync.START + "\nold table\n" + sync.END)
+            path.write_text(sync.START + "\nold table\n" + sync.END, encoding="utf-8")
             prs = [pull(i, merged_at="2026-09-01T00:00:00Z") for i in range(1, 8)]
             sync.sync_profile(path, {}, FakeGitHub(prs))
             prs.append(pull(8))
             self.assertTrue(sync.sync_profile(path, {}, FakeGitHub(prs)))
-            updated = path.read_text()
+            updated = path.read_text(encoding="utf-8")
             self.assertEqual(updated.count("| **["), 1)
-            self.assertIn("View&nbsp;all&nbsp;8", updated)
+            self.assertIn("查看全部&nbsp;8&nbsp;个", updated)
             self.assertEqual(re.findall(r"\[#(\d+)\]", updated), ["8", "7", "6", "5", "4", "3"])
             self.assertFalse(sync.sync_profile(path, {}, FakeGitHub(prs)))
 

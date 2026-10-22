@@ -34,19 +34,19 @@
 
 <p align="center">
   <a href="https://github-stats-extended.vercel.app/api/top-langs?username=th74100&layout=compact&langs_count=4&theme=light_github"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/top-langs?username=th74100&layout=compact&langs_count=4&theme=dark_github"><source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api/top-langs?username=th74100&layout=compact&langs_count=4&theme=light_github"><img height="150" alt="Top Languages" src="https://github-stats-extended.vercel.app/api/top-langs?username=th74100&layout=compact&langs_count=4&theme=light_github" /></picture></a>
-  <a href="https://github-stats-extended.vercel.app/api?username=th74100&hide_title=true&show_icons=true&include_all_commits=true&theme=light_github"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=th74100&hide_title=true&show_icons=true&include_all_commits=true&theme=dark_github"><source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api?username=th74100&hide_title=true&show_icons=true&include_all_commits=true&theme=light_github"><img height="150" alt="GitHub Stats" src="https://github-stats-extended.vercel.app/api?username=th74100&hide_title=true&show_icons=true&include_all_commits=true&theme=light_github" /></picture></a>
+  [![GitHub Stats](https://github-stats-extended.vercel.app/api?username=th74100&rank_icon=github&include_all_commits=true&theme=light_github)](https://github-stats-extended.vercel.app/api?username=th74100&rank_icon=github&include_all_commits=true&theme=light_github)
 </p>
 
 ## 🤝 开源贡献
 
 <!-- CONTRIBUTIONS:START -->
 
-41 merged PRs across 3 external open-source projects. Showing up to 6 recent PRs per project.
+在 3 个外部开源项目中合并了 41 个 PR，每个项目最多展示最近 6 个。
 
-| Project | Contributions | Merged PRs |
+| 项目 | 贡献内容 | 已合并 PR |
 | --- | --- | --- |
 | **[ant-design](https://github.com/ant-design/ant-design)** | Message 组件的指针事件与内容透明性修复。 | [#59622](https://github.com/ant-design/ant-design/pull/59622) |
-| **[antdv-next](https://github.com/antdv-next/antdv-next)** | Table、Tabs、Transfer、Locale 等组件的对齐与修复。 | [#1045](https://github.com/antdv-next/antdv-next/pull/1045)&nbsp;·&nbsp;[#1013](https://github.com/antdv-next/antdv-next/pull/1013)&nbsp;·&nbsp;[#1008](https://github.com/antdv-next/antdv-next/pull/1008)<br>[#1003](https://github.com/antdv-next/antdv-next/pull/1003)&nbsp;·&nbsp;[#1002](https://github.com/antdv-next/antdv-next/pull/1002)&nbsp;·&nbsp;[#978](https://github.com/antdv-next/antdv-next/pull/978)<br>[View&nbsp;all&nbsp;37&nbsp;→](https://github.com/antdv-next/antdv-next/pulls?q=is%3Apr+is%3Amerged+author%3Ath74100) |
+| **[antdv-next](https://github.com/antdv-next/antdv-next)** | Table、Tabs、Transfer、Locale 等组件的对齐与修复。 | [#1045](https://github.com/antdv-next/antdv-next/pull/1045)&nbsp;·&nbsp;[#1013](https://github.com/antdv-next/antdv-next/pull/1013)&nbsp;·&nbsp;[#1008](https://github.com/antdv-next/antdv-next/pull/1008)<br>[#1003](https://github.com/antdv-next/antdv-next/pull/1003)&nbsp;·&nbsp;[#1002](https://github.com/antdv-next/antdv-next/pull/1002)&nbsp;·&nbsp;[#978](https://github.com/antdv-next/antdv-next/pull/978)<br>[查看全部&nbsp;37&nbsp;个&nbsp;→](https://github.com/antdv-next/antdv-next/pulls?q=is%3Apr+is%3Amerged+author%3Ath74100) |
 | **[vue-components](https://github.com/antdv-next/vue-components)** | Tabs、Mentions 与工具函数修复。 | [#108](https://github.com/antdv-next/vue-components/pull/108)&nbsp;·&nbsp;[#105](https://github.com/antdv-next/vue-components/pull/105)&nbsp;·&nbsp;[#101](https://github.com/antdv-next/vue-components/pull/101) |
 
 <!-- CONTRIBUTIONS:END -->

@@ -6,7 +6,7 @@
   ],
   "project_summaries": {
     "ant-design/ant-design": "Message 指针事件穿透、Listy 虚拟滚动条表现修复。",
-    "antdv-next/antdv-next": "Message、Modal、Listy、Table、Tabs、Transfer 等组件修复。",
+    "antdv-next/antdv-next": "Tour、Pagination、Avatar/Table/Transfer/Locale、Message、Listy、Modal 修复。",
     "antdv-next/vue-components": "工具函数、Mentions、Tabs 与 Select 修复。"
   }
 }

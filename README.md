@@ -60,7 +60,7 @@
 | --- | --- | --- |
 | **[ant-design](https://github.com/ant-design/ant-design)** | Message 指针事件穿透、Listy 虚拟滚动条表现修复。 | [#59643](https://github.com/ant-design/ant-design/pull/59643)&nbsp;·&nbsp;[#59622](https://github.com/ant-design/ant-design/pull/59622) |
 | **[antdv-next](https://github.com/antdv-next/antdv-next)** | Message、Modal、Listy、Table、Tabs、Transfer 等组件修复。 | [#1051](https://github.com/antdv-next/antdv-next/pull/1051)&nbsp;·&nbsp;[#1053](https://github.com/antdv-next/antdv-next/pull/1053)&nbsp;·&nbsp;[#1045](https://github.com/antdv-next/antdv-next/pull/1045)<br>[#1013](https://github.com/antdv-next/antdv-next/pull/1013)&nbsp;·&nbsp;[#1008](https://github.com/antdv-next/antdv-next/pull/1008)&nbsp;·&nbsp;[#1003](https://github.com/antdv-next/antdv-next/pull/1003)<br>[查看全部&nbsp;39&nbsp;个&nbsp;→](https://github.com/antdv-next/antdv-next/pulls?q=is%3Apr+is%3Amerged+author%3Ath74100) |
-| **[vue-components](https://github.com/antdv-next/vue-components)** | Tabs、Mentions 与工具函数修复。 | [#123](https://github.com/antdv-next/vue-components/pull/123)&nbsp;·&nbsp;[#108](https://github.com/antdv-next/vue-components/pull/108)&nbsp;·&nbsp;[#105](https://github.com/antdv-next/vue-components/pull/105)<br>[#101](https://github.com/antdv-next/vue-components/pull/101) |
+| **[vue-components](https://github.com/antdv-next/vue-components)** | Tabs、Mentions、Select 与工具函数修复。 | [#123](https://github.com/antdv-next/vue-components/pull/123)&nbsp;·&nbsp;[#108](https://github.com/antdv-next/vue-components/pull/108)&nbsp;·&nbsp;[#105](https://github.com/antdv-next/vue-components/pull/105)<br>[#101](https://github.com/antdv-next/vue-components/pull/101) |
 
 <!-- CONTRIBUTIONS:END -->
 

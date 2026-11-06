@@ -1,7 +1,5 @@
 ## 👋 嗨，我是 JANSON！
 
-![](https://raw.githubusercontent.com/th74100/th74100/main/assets/header.png)
-
 **前端开发 / 保持学习**
 
 写代码是工作，也是爱好。

@@ -52,12 +52,12 @@
 
 <!-- CONTRIBUTIONS:START -->
 
-已合并 47 个 PR，覆盖 3 个外部开源项目（每个项目展示最近 6 个）。
+已合并 48 个 PR，覆盖 3 个外部开源项目（每个项目展示最近 6 个）。
 
 | 项目 | 贡献内容 | 已合并 PR |
 | --- | --- | --- |
 | **[ant-design](https://github.com/ant-design/ant-design)** | Message 指针事件穿透、Listy 虚拟滚动条表现修复。 | [#59729](https://github.com/ant-design/ant-design/pull/59729)&nbsp;·&nbsp;[#59643](https://github.com/ant-design/ant-design/pull/59643)&nbsp;·&nbsp;[#59622](https://github.com/ant-design/ant-design/pull/59622) |
-| **[antdv-next](https://github.com/antdv-next/antdv-next)** | Tour、Pagination、Avatar/Table/Transfer/Locale、Message、Listy、Modal 修复。 | [#1078](https://github.com/antdv-next/antdv-next/pull/1078)&nbsp;·&nbsp;[#1051](https://github.com/antdv-next/antdv-next/pull/1051)&nbsp;·&nbsp;[#1053](https://github.com/antdv-next/antdv-next/pull/1053)<br>[#1045](https://github.com/antdv-next/antdv-next/pull/1045)&nbsp;·&nbsp;[#1013](https://github.com/antdv-next/antdv-next/pull/1013)&nbsp;·&nbsp;[#1008](https://github.com/antdv-next/antdv-next/pull/1008)<br>[查看全部&nbsp;40&nbsp;个&nbsp;→](https://github.com/antdv-next/antdv-next/pulls?q=is%3Apr+is%3Amerged+author%3Ath74100) |
+| **[antdv-next](https://github.com/antdv-next/antdv-next)** | Tour、Pagination、Avatar/Table/Transfer/Locale、Message、Listy、Modal 修复。 | [#1088](https://github.com/antdv-next/antdv-next/pull/1088)&nbsp;·&nbsp;[#1078](https://github.com/antdv-next/antdv-next/pull/1078)&nbsp;·&nbsp;[#1051](https://github.com/antdv-next/antdv-next/pull/1051)<br>[#1053](https://github.com/antdv-next/antdv-next/pull/1053)&nbsp;·&nbsp;[#1045](https://github.com/antdv-next/antdv-next/pull/1045)&nbsp;·&nbsp;[#1013](https://github.com/antdv-next/antdv-next/pull/1013)<br>[查看全部&nbsp;41&nbsp;个&nbsp;→](https://github.com/antdv-next/antdv-next/pulls?q=is%3Apr+is%3Amerged+author%3Ath74100) |
 | **[vue-components](https://github.com/antdv-next/vue-components)** | 工具函数、Mentions、Tabs 与 Select 修复。 | [#123](https://github.com/antdv-next/vue-components/pull/123)&nbsp;·&nbsp;[#108](https://github.com/antdv-next/vue-components/pull/108)&nbsp;·&nbsp;[#105](https://github.com/antdv-next/vue-components/pull/105)<br>[#101](https://github.com/antdv-next/vue-components/pull/101) |
 
 <!-- CONTRIBUTIONS:END -->
